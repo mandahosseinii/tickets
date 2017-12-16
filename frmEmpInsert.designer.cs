@@ -1,6 +1,6 @@
 ﻿namespace layer1_presentation
 {
-    partial class frmCustomerInfo
+    partial class frmEmpInsert
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtTell = new System.Windows.Forms.TextBox();
             this.cmbSex = new System.Windows.Forms.ComboBox();
             this.cmbMadrak = new System.Windows.Forms.ComboBox();
@@ -45,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -65,10 +65,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.btnadd = new System.Windows.Forms.Button();
-            this.btnview = new System.Windows.Forms.Button();
             this.dgview = new System.Windows.Forms.DataGridView();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -77,7 +77,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtid);
+            this.groupBox1.Controls.Add(this.txtpassword);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txtusername);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtTell);
             this.groupBox1.Controls.Add(this.cmbSex);
@@ -101,6 +103,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "اطلاعات:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(407, 161);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "نام کاربری:";
             // 
             // txtTell
             // 
@@ -237,16 +248,6 @@
             this.label1.Size = new System.Drawing.Size(23, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "نام:";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(292, 424);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "ویرایش";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label12
             // 
@@ -428,16 +429,6 @@
             this.btnadd.UseVisualStyleBackColor = true;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
-            // btnview
-            // 
-            this.btnview.Location = new System.Drawing.Point(795, 424);
-            this.btnview.Name = "btnview";
-            this.btnview.Size = new System.Drawing.Size(75, 23);
-            this.btnview.TabIndex = 36;
-            this.btnview.Text = "مشاهده";
-            this.btnview.UseVisualStyleBackColor = true;
-            this.btnview.Click += new System.EventHandler(this.btnview_Click);
-            // 
             // dgview
             // 
             this.dgview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -447,35 +438,40 @@
             this.dgview.Size = new System.Drawing.Size(553, 378);
             this.dgview.TabIndex = 37;
             // 
-            // txtid
+            // txtusername
             // 
-            this.txtid.Location = new System.Drawing.Point(271, 154);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(131, 20);
-            this.txtid.TabIndex = 24;
+            this.txtusername.Location = new System.Drawing.Point(271, 154);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(131, 20);
+            this.txtusername.TabIndex = 24;
             // 
-            // label9
+            // txtpassword
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(407, 161);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 13);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "کد مشتری:";
+            this.txtpassword.Location = new System.Drawing.Point(18, 153);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(131, 20);
+            this.txtpassword.TabIndex = 26;
             // 
-            // frmCustomerInfo
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(154, 160);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "کلمه عبور:";
+            // 
+            // frmEmpInsert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1103, 467);
             this.Controls.Add(this.dgview);
-            this.Controls.Add(this.btnview);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmCustomerInfo";
+            this.Name = "frmEmpInsert";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "اطلاعات";
@@ -509,7 +505,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -529,9 +524,10 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnadd;
-        private System.Windows.Forms.Button btnview;
         private System.Windows.Forms.DataGridView dgview;
-        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtusername;
     }
 }
