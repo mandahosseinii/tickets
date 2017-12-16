@@ -19,3 +19,10 @@ G:\des\manda hosseini-normal-3layer\mabahes\layer2_bussiness\bin\Debug\layer3_Da
 G:\des\manda hosseini-normal-3layer\mabahes\layer2_bussiness\obj\Debug\layer2_bussiness.csprojResolveAssemblyReference.cache
 G:\des\manda hosseini-normal-3layer\mabahes\layer2_bussiness\obj\Debug\layer2_bussiness.dll
 G:\des\manda hosseini-normal-3layer\mabahes\layer2_bussiness\obj\Debug\layer2_bussiness.pdb
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\bin\Debug\layer2_bussiness.dll
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\bin\Debug\layer2_bussiness.pdb
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\bin\Debug\layer3_DataClass.dll
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\bin\Debug\layer3_DataClass.pdb
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\obj\Debug\layer2_bussiness.csprojResolveAssemblyReference.cache
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\obj\Debug\layer2_bussiness.dll
+G:\manda hosseini-sale-3layer\salesystem\layer2_bussiness\obj\Debug\layer2_bussiness.pdb

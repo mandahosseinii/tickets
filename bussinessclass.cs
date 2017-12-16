@@ -43,11 +43,27 @@ namespace layer2_bussiness
             or.Orders_delete(id);
         }
 
+
+        public void Emp_insert( string name, string family, string father, string username, string password, string codemelli, string bdate, Int64 bprovince, Int64 bcity, Int64 bpart, Int64 bvillage, string sex, Int64 lprovince, Int64 lcity, Int64 lpart, Int64 lvillage, int madrak, int tell, int status)
+        {
+            Employee emp = new Employee();
+            emp.Emp_insert( name, family, father, username, password, codemelli, bdate, bprovince, bcity, bpart, bvillage, sex, lprovince, lcity, lpart, lvillage, madrak, tell, status);
+
+        }
+
+
         public void Emp_update(Int64 id, string name, string family, string father, string username, string password, string codemelli, string bdate, Int64 bprovince, Int64 bcity, Int64 bpart, Int64 bvillage, string sex, Int64 lprovince, Int64 lcity, Int64 lpart, Int64 lvillage, int madrak, int tell, int status)
         {
             Employee emp = new Employee();
             emp.Emp_update(id, name, family, father, username, password, codemelli, bdate, bprovince, bcity, bpart, bvillage, sex, lprovince, lcity, lpart, lvillage, madrak, tell, status);
 
+        }
+
+        public DataSet Emp_GetList()
+        {
+            Employee emp = new Employee();
+            return emp.Emp_GetList();
+                
         }
 
         public DataSet City_GetList()
