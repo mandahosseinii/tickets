@@ -17,13 +17,7 @@ namespace layer1_presentation
             this.BackgroundImage = Properties.Resources.ticket_image;
         }
 
-        private void MEmpInfo_Click(object sender, EventArgs e)
-        {
-            frmEmpInfo frm = new frmEmpInfo();
-            frm.MdiParent = this;
-            frm.WindowState = FormWindowState.Normal;
-            frm.Show();
-        }
+      
 
         private void MEmpOrder_Click(object sender, EventArgs e)
         {
@@ -60,6 +54,22 @@ namespace layer1_presentation
         private void MCustomerInfo_Click(object sender, EventArgs e)
         {
             frmCustomerInfo frm = new frmCustomerInfo();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Normal;
+            frm.Show();
+        }
+
+        private void MEmpInfo_Click(object sender, EventArgs e)
+        {
+            frmEmpInfo frm = new frmEmpInfo();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Normal;
+            frm.Show();
+        }
+
+        private void MEmpnew_Click(object sender, EventArgs e)
+        {
+            frmEmpInsert frm = new frmEmpInsert();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Normal;
             frm.Show();
